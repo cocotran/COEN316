@@ -1,0 +1,40 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/t/t_anh/COEN316/Lab1/Code
+T_opt
+Z1 VN0ZV;n;gkXi9>bMYdQNnc1
+Z2 04 3 3 work alu arc 1
+Z3 =1-c8d9d233c64e-63cffb27-417ee-3217
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/t/t_anh/COEN316/Lab1/Code
+Ealu
+Z8 w1674574342
+Z9 DPx17 __model_tech/ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z10 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R7
+Z11 8alu.vhd
+Z12 Falu.vhd
+l0
+L5
+Z13 Vm:gee2TUzBHSG_615]KJW1
+Z14 OL;C;6.6g;45
+Z15 tExplicit 1
+Z16 !s100 X4i[?X=H2WKSHagA3;]@K0
+Aarc
+R9
+R10
+DEx40 /nfs/home/t/t_anh/COEN316/Lab1/Code/work 3 alu 0 22 m:gee2TUzBHSG_615]KJW1
+32
+Mx2 17 __model_tech/ieee 14 std_logic_1164
+Mx1 17 __model_tech/ieee 11 numeric_std
+l27
+L25
+Z17 VBSm@`PkJ298eocRJ734;>1
+R14
+R15
+Z18 !s100 OO?Tl6^6Zk10510E1aEmK0

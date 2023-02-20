@@ -1,0 +1,27 @@
+# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1160.80.1.el7.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim alu 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.alu(arc)#1
+# 
+#  
+force x 00000000000000000000000000000001
+force y 00000000000000000000000000000001
+run
+force func 10
+force add_sub 0
+run
+force func 11
+force logic_func 00
+run

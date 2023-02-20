@@ -1,0 +1,110 @@
+
+COEN 316 Fall 2022
+
+The lab quiz will involve the  execution of
+a small MIPS assembly language program. The
+program, in machine code form will be provided
+to you during the lab quiz. You are to modify
+your instruction cache of your CPU design so that
+it contains this program.  Your are to use the
+CPU entity given in Lab 5 to demonstrate the the functionality
+of your design.  
+
+All of the required file to perform the lab quiz (other than your
+complete CPU design) are in the world-readable directory:
+
+/home/t/ted/PUBLIC/COEN316/LABTEST
+
+[poise] [/home/t/ted/PUBLIC/COEN316/LABTEST] > whoami
+joevlsi
+[poise] [/home/t/ted/PUBLIC/COEN316/LABTEST] > ls -al
+total 40
+drwxr-xr-x 2 ted ted  4096 Nov 25 14:18 .
+drwxr-xr-x 4 ted ted  4096 Sep 11  2019 ..
+-rw-r--r-- 1 ted ted   333 Nov 11 17:40 cpu_entity      ==> THIS IS THE ENTITY TO BE USED
+-rw-r--r-- 1 ted ted  1561 Nov 23  2018 cpu_labtest.do  ==> THIS IS THE DO FILE TO BE USED
+-rw-r--r-- 1 ted ted  1832 Nov 11 17:43 cpu.xdc         ==> THIS IS THE .XDC FILE TO BE USED
+-rw-r--r-- 1 ted ted  3093 Nov 25 14:16 info_and_XDC    ==> THIS IS THIS ANNOUNCEMENT
+-rw-r--r-- 1 ted ted  2416 Dec  5  2016 machine_code    ==> THIS IS THE MACHINE CODE FOR THE I-CACHE
+
+
+You are to :
+
+1) Perform a Modelsim simulation using the provided
+   cpu_labtest.do file. Print out the simulation results
+   (as produced by Modelsim, no screen captures), PRINT your
+   name and student ID and sign your name on the printout.
+
+2) Synthesize and implement your CPU with the I-cache
+   containing the provided machine code. Demonstrate the
+   operation of your CPU on the Nexys A7 FPGA board to the
+   lab TA.
+
+   The following XDC file is to be used (cpu.xdc):
+
+
+# Ted Obuchowicz
+# XDC file for complete CPU
+
+set_property CLOCK_DEDICATED_ROUTE  FALSE [ get_nets clk ] ;
+
+# set the reset to the left most switch
+
+set_property -dict { PACKAGE_PIN V10 IOSTANDARD LVCMOS33 }  [ get_ports { reset }  ] ;
+
+# use the centre pushbutton as the clock
+
+set_property -dict { PACKAGE_PIN N17 IOSTANDARD LVCMOS33 }  [ get_ports { clk }  ] ;
+
+
+# set pc_out to left hand LEDS 
+
+set_property -dict { PACKAGE_PIN V11   IOSTANDARD LVCMOS33 } [ get_ports { pc_out[3] }  ] ;
+set_property -dict { PACKAGE_PIN V12 IOSTANDARD LVCMOS33 }   [ get_ports { pc_out[2] }  ] ;
+set_property -dict { PACKAGE_PIN V14 IOSTANDARD LVCMOS33 }   [ get_ports { pc_out[1] }  ] ;
+set_property -dict { PACKAGE_PIN V15 IOSTANDARD LVCMOS33 }   [ get_ports { pc_out[0] }  ] ;
+
+# set overflow and zero immediately after pc_out
+
+set_property -dict { PACKAGE_PIN T16 IOSTANDARD LVCMOS33 }   [ get_ports { overflow }  ] ;
+set_property -dict { PACKAGE_PIN U14 IOSTANDARD LVCMOS33 }   [ get_ports { zero }  ] ;
+
+
+# set rs_out and rt_out to the right hand LEDS  with a gap between the two
+
+# rs_out
+set_property -dict { PACKAGE_PIN V16 IOSTANDARD LVCMOS33 }   [ get_ports { rs_out[3] }  ] ;
+set_property -dict { PACKAGE_PIN U16 IOSTANDARD LVCMOS33 }   [ get_ports { rs_out[2] }  ] ;
+set_property -dict { PACKAGE_PIN U17 IOSTANDARD LVCMOS33 }   [ get_ports { rs_out[1] }  ] ;
+set_property -dict { PACKAGE_PIN V17 IOSTANDARD LVCMOS33 }   [ get_ports { rs_out[0] }  ] ;
+
+# rt_out
+set_property -dict { PACKAGE_PIN N14  IOSTANDARD LVCMOS33 }  [ get_ports { rt_out[3] }  ] ;
+set_property -dict { PACKAGE_PIN J13 IOSTANDARD LVCMOS33 }   [ get_ports { rt_out[2] }  ] ;
+set_property -dict { PACKAGE_PIN K15 IOSTANDARD LVCMOS33 }   [ get_ports { rt_out[1] }  ] ;
+set_property -dict { PACKAGE_PIN H17 IOSTANDARD LVCMOS33 }   [ get_ports { rt_out[0] }  ] ;
+
+
+
+The following VHDL entity is to be used (the same entity as
+in Lab 5, and same as the file cpu_entity in the LABTEST directory):
+
+
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_signed.all;
+
+entity  cpu  is
+port(reset : in std_logic;
+     clk   : in std_logic;
+     rs_out, rt_out : out std_logic_vector(3 downto 0); -- output ports from reg. file
+     pc_out : out std_logic_vector(3 downto 0);
+     overflow, zero : out std_logic); 
+end cpu;
+
+
+
+
+
+

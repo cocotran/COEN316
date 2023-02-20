@@ -1,0 +1,62 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/t/t_anh/COEN316/Lab2/Code
+T_opt
+VHLYPfVm^JP^jnc?mU04dP2
+04 7 4 work regfile arch 1
+Z1 =1-a08cfde439e4-63eeb553-3ac68-7a93
+Z2 o-quiet -auto_acc_if_foreign -work work
+Z3 n@_opt
+Z4 OL;O;6.6g;45
+Z5 d/home/t/t_anh/COEN316/Lab2/Code
+Eregfile
+Z6 w1676588325
+Z7 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z8 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z9 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z10 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R5
+Z11 8regfile_board.vhd
+Z12 Fregfile_board.vhd
+l0
+L8
+Z13 V_>h<i_OVeGhH9TK1KSDf53
+Z14 OL;C;6.6g;45
+32
+Z15 tExplicit 1
+Z16 !s100 Ag8H_bH[mhm_jkWOmP8U12
+Aarch
+R7
+R8
+R9
+R10
+Z17 DEx4 work 7 regfile 0 22 _>h<i_OVeGhH9TK1KSDf53
+l26
+L21
+Z18 Vc2<7NBj]MN<H[bXel1aIb1
+R14
+32
+Z19 Mx4 4 ieee 14 std_logic_1164
+Z20 Mx3 4 ieee 18 std_logic_unsigned
+Z21 Mx2 4 ieee 15 std_logic_arith
+Z22 Mx1 4 ieee 11 numeric_std
+R15
+Z23 !s100 k1AgC@68@?3jgH71igQh10
+Eregfile_board
+Z24 w1676588050
+R7
+R8
+R9
+R10
+R5
+R11
+R12
+l0
+L8
+Z25 VzE[dmA?XRoK0NoL;XRO=d1
+R14
+32
+R15
+Z26 !s100 7^V<mJ^V`:M5zCYV[g?292

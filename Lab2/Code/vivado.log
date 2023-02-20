@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Feb 16 17:03:49 2023
+# Process ID: 25350
+# Current directory: /nfs/home/t/t_anh/COEN316/Lab2/Code
+# Command line: vivado
+# Log file: /nfs/home/t/t_anh/COEN316/Lab2/Code/vivado.log
+# Journal file: /nfs/home/t/t_anh/COEN316/Lab2/Code/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /nfs/home/t/t_anh/Lab2/Lab2.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:12 . Memory (MB): peak = 6286.809 ; gain = 143.652 ; free physical = 10773 ; free virtual = 22821
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Feb 16 17:33:41 2023] Launched synth_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Thu Feb 16 17:38:00 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+update_files -from_files /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd -to_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd' with file '/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd'.
+INFO: [filemgmt 20-1080] Importing file from '/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd' to '/nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd'.
+export_ip_user_files -of_objects  [get_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd] -no_script -reset -force -quiet
+remove_files  /nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd
+import_files -force -norecurse /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd
+update_files -from_files /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd -to_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd' with file '/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd'.
+INFO: [filemgmt 20-1080] Importing file from '/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd' to '/nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd'.
+update_compile_order -fileset sources_1
+import_files -force -norecurse /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd
+update_compile_order -fileset sources_1
+import_files -force -norecurse /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd] -no_script -reset -force -quiet
+remove_files  /nfs/home/t/t_anh/Lab2/Lab2.srcs/sources_1/imports/Code/regfile_board.vhd
+update_compile_order -fileset sources_1
+add_files -norecurse /nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd
+WARNING: [filemgmt 56-12] File '/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd' cannot be added to the project because it already exists in the project, skipping this file
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Feb 16 17:58:56 2023] Launched synth_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Thu Feb 16 18:00:19 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Feb 16 18:02:48 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+update_files -from_files /nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc -to_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc' with file '/nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc'.
+INFO: [filemgmt 20-1080] Importing file from '/nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc' to '/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc'.
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Feb 16 18:30:52 2023] Launched synth_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Thu Feb 16 18:32:18 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Feb 16 18:34:40 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+update_files -from_files /nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc -to_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc' with file '/nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc'.
+INFO: [filemgmt 20-1080] Importing file from '/nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc' to '/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc'.
+update_files -from_files /nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc -to_files /nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc' with file '/nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc'.
+INFO: [filemgmt 20-1080] Importing file from '/nfs/home/t/t_anh/COEN316/Lab2/nexys-A7100T_master.xdc' to '/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc'.
+reset_run synth_1
+launch_runs impl_1 -jobs 2
+[Thu Feb 16 18:37:59 2023] Launched synth_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/synth_1/runme.log
+[Thu Feb 16 18:37:59 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Feb 16 18:41:41 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/Lab2/Lab2.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+open_run: Time (s): cpu = 00:00:08 ; elapsed = 00:00:46 . Memory (MB): peak = 6840.371 ; gain = 108.449 ; free physical = 10659 ; free virtual = 23037
+INFO: [Common 17-344] 'open_run' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 16 18:44:58 2023...

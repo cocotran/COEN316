@@ -1,0 +1,292 @@
+
+Ted Obuchowicz
+August 26, 2020
+
+
+"Let there be Linux" - A brief guide to using Linux
+
+
+
+(inspired by "Let There be Rock" - AC/DC)
+
+
+
+"In the beginning
+ Back in 1971
+ Users didn't know about time-sharing systems
+ And all that OS 
+ The IBM man had big blue
+ The VAX man has VMS
+ No one know what command prompt was
+ But Kernighan/Ritchie had the code
+ They said
+
+ Let there be UNIX
+ There was a file system
+ Let there be vi 
+ There was text
+ Let there be 'more'
+ There was more
+ Let there by lpr 
+ There was paper
+ Ohhh, let there be UNIX
+ Let there be Linux
+
+ And it came to pass
+ That Linus Torvalds was born
+ And all across the world
+ Every computer student 
+ Was coding up a storm
+ And the coders got famous 
+ and the developers got rich (too rich)
+ and in every computer lab
+ There was a star
+ With seven compile time errors
+ There were 15 million fingers
+ Learning how to type commands
+ And you could hear the fingers pecking
+ And this is what they had to say:
+
+ Let there be UNIX
+ files
+ text
+ lpr 
+
+Ohhh , let there be UNIX
+
+One night in a lab called H813
+There was a 92 line coder
+And the code was good, and the code was hard
+and the coder turned to the class and she said to the lab
+
+Let there be UNIX
+Let there be Linux
+Let there be Linux
+We don't need no Windows
+We don't need no blue screens of death
+Hey Bill, leave Linus alone
+All in all you were just another line of code in the program. "
+
+
+
+Quick Guide to working with Linux on the ENCS Linux systems
+--------------------------------------------------
+
+
+1. Download and install PuTTY on your Windows PC
+
+
+2. Once you have remotely logged in to the
+   ENCS Linux server (login.encs.concordia.ca)
+   you will be in your so called 'home directory'.
+   This document shows how to access material in
+   a world readable public directory in
+   /home/t/ted/PUBLIC/COEN313 as an example. The
+   steps contained within this guide can be be applied
+   to access other directories (provided the file permissions
+   allow for it)
+
+
+Here is a typical set of commands to access
+the material in /home/t/ted/PUBLIC/COEN313.
+In what follows, the "ted@grace ~ 5:14pm >"
+is an example of what is know as the Linux command
+prompt, your prompt appear different. Linux commands
+are entered AFTER the prompt. 
+
+I shall use CAPITALS for explanatory comments.
+
+
+
+ted@grace ~ 4:26pm >         cd /home/t/ted/PUBLIC
+--------------------------    ---------------------
+ Linux command prompt            a command line
+
+
+cd MEANS TO CHANGE DIRECTORY , the general form 
+is :
+
+
+cd    directory_name
+
+
+
+
+
+NEXT, WE USE the ls COMMAND TO OBTAIN A DIRECTORY
+LISTING (to see what is inside /home/t/ted/PUBLIC)  
+
+
+ted@grace ~/PUBLIC 4:28pm >ls
+COEN212  COEN244  COEN313  COEN317  COMP228   LAYOUT   PROJECT  UNIX_TUTORIAL
+COEN243  COEN311  COEN316  COEN451  COMP5201  MECH215  SOEN228
+
+
+
+The -al option to ls command LISTS ALL FILES AND DIRECTORIES
+USING THE "LONG" FORMAT:
+
+
+
+ted@grace ~/PUBLIC 4:28pm >ls -al
+total 144
+drwxr-xr-x  17 ted ted  4096 Feb 13  2020 .
+drwx--x--x 432 ted ted 77824 Aug 26 16:26 ..
+drwx------   5 ted ted  4096 Dec  7  2017 COEN212
+drwx------  12 ted ted  4096 Mar 29  2017 COEN243
+drwx------   6 ted ted  4096 May  8 13:16 COEN244
+drwx------   6 ted ted  4096 Oct 11  2019 COEN311
+drwxr-xr-x   4 ted ted  4096 Jan 14  2020 COEN313
+drwxr-xr-x   4 ted ted  4096 Sep 11  2019 COEN316
+drwxr-xr-x   8 ted ted  4096 Sep 24  2019 COEN317
+drwxr-xr-x   6 ted ted  4096 Nov 14  2019 COEN451
+drwx------   9 ted ted  4096 May 13  2013 COMP228
+drwx------   9 ted ted  4096 Dec  2  2013 COMP5201
+drwxr-xr-x   2 ted ted  4096 Jul  4  2005 LAYOUT
+drwx------  13 ted ted  4096 Jan 30  2020 MECH215
+drwxr-xr-x   3 ted ted  4096 Feb 25  2000 PROJECT
+drwx------  10 ted ted  4096 Jun  9  2015 SOEN228
+drwxr-xr-x   2 ted ted  4096 Jan 17  2020 UNIX_TUTORIAL
+
+drwxr-xr-x   2 ted ted  4096 Sep 12  2018 UNIX_TUTORIAL
+----------
+
+these are the so called file permissions. 
+User 'ted' can read , write, and execute ,
+everyone else can only read and execute.
+'x' (execute ) permission is required in order to be
+able to cd into a directory. 'r' (read) permission
+is required in order to read (or copy) the contents
+of a file, and 'w' permission is needed to change
+the file (or to delete) the file. If the permissions
+start with the letter 'd', it means the listed name
+is a directory (as opposed to a simple file).
+You will note that some directories do not have
+world read-execute permission.
+
+
+
+WE NOW GO INTO THE COEN313 directory:
+
+
+ted@grace ~/PUBLIC 4:29pm >cd COEN313
+ted@grace COEN313 4:30pm >ls
+DD_flow_tutorial.pdf  LABS  TUTORIAL
+
+
+
+To change into the LABS directory and
+list its contents:
+
+
+ed@grace COEN313 4:30pm >cd LABS
+ted@grace LABS 4:31pm >ls -al
+total 24
+drwxr-xr-x 6 ted ted 4096 Mar  5 20:17 .
+drwxr-xr-x 4 ted ted 4096 Jan 14  2020 ..
+drwxr-xr-x 2 ted ted 4096 Jan 14  2020 Lab1
+drwxr-xr-x 2 ted ted 4096 Jan 31  2020 Lab2
+drwxr-xr-x 2 ted ted 4096 Feb 14  2020 Lab3
+drwxr-xr-x 2 ted ted 4096 Mar  5 20:17 Lab4
+
+
+To change into the Lab1 directory:
+
+
+ted@grace LABS 4:31pm >cd Lab1
+ted@grace Lab1 4:32pm >ls
+lab1.pdf
+
+
+NOTE: The labs in this document may not correspond to the
+Fall 2020 labs. This document merely serves as a short
+tutorial on how to navigate within directories in Linux.
+
+
+to go one level UP in a directory structure, 
+simply do cd ..
+
+For example, if we are in /home/t/ted/PUBLIC/COEN313/LABS,
+the  cd .. command :
+
+ted@grace LABS 4:34pm >cd ..
+ted@grace COEN313 4:34pm >
+
+
+brings us back to :
+
+/home/t/ted/PUBLIC/COEN313
+
+
+
+to see the contents of an ASCII text file on the screen use
+the 'more' command , this command displays one screenful
+of text on the screen, and waits until you press the SPACEBAR
+key to show more - hence the name of the command. When the entire
+file has been displayed, control returns to the command prompt.j
+
+
+We will use the more command to view the contents of a sample
+text file :
+
+ted@grace COEN313 4:36pm >more this_is_a_text_file.txt 
+
+this is a sample text file.
+
+ted@grace COEN313 4:37pm >
+
+
+
+
+Sending email from the command line:
+-------------------------------------
+
+
+
+The easiest way to send a file by email is with the 'mail command:
+
+"mail recipients_email_address <  name_of_file "  (then press Enter)
+
+as in:
+
+
+
+ted@grace COEN313 4:37pm >mail ted < this_is_a_text_file.txt
+
+if you want to include the specified file as an attachment, use
+the -a option to the mail command :
+
+ted@grace COEN313 4:39pm >mail -a this_is_a_text_file.txt  ted@ece.concordia.ca
+
+YOU WILL BE ASKED TO ENTER A SUBJECT:
+
+Subject: long live linux
+
+once you've entered the subject, you can type the body
+of the mail , and then press CTRL-D keys at the same time
+to send the mail. 
+
+
+LEARNING MORE ABOUT LINUX
+----------------------------
+
+
+There is a tutorial abour 20 pages long in;
+
+/home/t/ted/PUBLIC/UNIX_TUTORIAL/ECE_UNIX_guide
+
+
+I suggest you use the 'more' command to read it.
+Or better yet, email it yo yourself using the 'mail'
+command and read it at home. Note: some of the commands
+contained in the ECE_UNIX_guide have since become depracated
+due to various system changes since it was written, but the
+basic Linux commands contained therin are still valid.
+
+
+There are also many good, well-written books written
+on the subject of Linux. The best way is to install
+it on your system (make your PC a dual-boot Linux-Windows
+system) and start using it.
+
+

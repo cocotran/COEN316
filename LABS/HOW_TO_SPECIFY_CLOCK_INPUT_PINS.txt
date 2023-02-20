@@ -1,0 +1,57 @@
+
+For COEN 313 Lab 4 (and any design which makes use of synchronous elements
+with a clock input), we have two choices as to how to specify where the
+clock source is to come from:
+
+1) make use of the dedicated clock oscillator circuit available on
+   most FPGA development boards. For example, on the Nexys A7 board
+   we normally make use of in the lab, there is a 100 MHz clock circuit
+   which is connected to FPGA pin E3 (the Master XDC file gives this information).
+
+   So, all that is required is to specify that the clock input port be constrained
+   to pin E3 in the .xdc file :
+
+  # clock from board 100 MHz
+    set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }];
+
+
+A standard TCL synthesis script is then used to synthesize the design.
+
+Obviously, if we were in an actual lab environment, using a 100MHz clock does
+not allow for one to manually observe the circuit behaviour using LEDs and human
+eyes ( an logic analyzer and some automatic test equipment would be required).
+This technique is appropriate when one is testing a "real-world" implementation.
+
+2) We can use one of the 16 available switches on the FPGA board to use
+   as the clock input. This is what would be done hade we been in the in-person
+   lab setting. We would simply flip the switch up and down to manually toggle the
+   clock input. When using this approach, we need to slighly modify the .xdc file
+   to tell the Xilinx Vivado tools to allow for using 'non-dedicated routing resources'
+   to route the clock signal from the IO pad connected to the whichever switch is
+   specified as the clock using non-dedicated routing resources. All that is required
+   is the addition of the following PROPERTY in the .xdc file:
+
+# clock from  a regular switch on board
+# set this property to FALSE to allow use of non-dedicated routing resources
+# to route clock IBUF when using  a regular switch input (for manual single-step
+# clocking of the FPGA board in a lab setting, if not set to FALSE, placement ERRORS
+# occur during the execution of the TCL synthesis script.
+
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets clk]
+
+# we use a regular switch on the board as the clock input , useful for
+# manual clocking in single-step board for testing of the downloaded design
+# in a lab environment
+#
+set_property -dict { PACKAGE_PIN R13    IOSTANDARD LVCMOS33 } [get_ports { clk }];
+
+
+The Vivado tools use special , dedicated, low-delay routing resources to route
+a clock input from a FPGA pin to all the clock inputs of all the synchronous elements
+within the design. This is done to minimize clock skew (skew refers to the difference
+in arrival time of the rising clock edge due to propagation and routing delays ).
+
+
+
+
+

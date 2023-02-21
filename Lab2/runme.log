@@ -1,0 +1,388 @@
+
+*** Running vivado
+    with args -log regfile.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source regfile.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source regfile.tcl -notrace
+Command: synth_design -top regfile -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11534 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1401.578 ; gain = 85.805 ; free physical = 10528 ; free virtual = 22893
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'regfile' [/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (1#1) [/nfs/home/t/t_anh/COEN316/Lab2/Code/regfile_board.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1446.219 ; gain = 130.445 ; free physical = 10541 ; free virtual = 22906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1446.219 ; gain = 130.445 ; free physical = 10540 ; free virtual = 22905
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 1446.219 ; gain = 130.445 ; free physical = 10540 ; free virtual = 22905
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc]
+Finished Parsing XDC File [/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/nfs/home/t/t_anh/Lab2/Lab2.srcs/constrs_1/imports/COEN316/nexys-A7100T_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/regfile_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/regfile_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1834.973 ; gain = 0.000 ; free physical = 10193 ; free virtual = 22559
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10347 ; free virtual = 22712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10347 ; free virtual = 22712
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:45 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10349 ; free virtual = 22714
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "register_array_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "register_array_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:46 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10339 ; free virtual = 22705
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][30]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][29]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][28]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][27]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][26]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][25]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][24]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][23]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][22]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][21]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][20]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][19]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][18]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][16]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][15]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][14]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][13]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][12]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][11]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][10]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][9]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][8]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][7]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][6]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][5]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[0][4]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][30]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][29]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][28]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][27]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][26]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][25]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][24]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][23]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][22]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][21]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][20]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][19]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][18]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][16]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][15]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][14]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][13]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][12]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][11]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][10]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][9]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][8]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][7]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][6]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][5]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[1][4]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][30]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][29]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][28]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][27]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][26]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][25]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][24]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][23]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][22]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][21]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][20]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][19]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][18]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][16]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][15]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][14]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][13]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][12]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][11]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][10]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][9]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][8]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][7]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][6]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][5]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[2][4]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][31]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][30]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][29]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][28]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][27]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][26]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][25]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][24]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][23]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][22]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][21]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][20]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][19]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][18]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][17]) is unused and will be removed from module regfile.
+WARNING: [Synth 8-3332] Sequential element (register_array_reg[3][16]) is unused and will be removed from module regfile.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:46 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10327 ; free virtual = 22694
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:58 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT5  |    16|
+|3     |LUT6  |    32|
+|4     |MUXF7 |    16|
+|5     |MUXF8 |     8|
+|6     |FDCE  |    64|
+|7     |IBUF  |    19|
+|8     |OBUF  |     8|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   164|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10206 ; free virtual = 22573
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 448 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1834.973 ; gain = 130.445 ; free physical = 10260 ; free virtual = 22627
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:59 . Memory (MB): peak = 1834.973 ; gain = 519.199 ; free physical = 10270 ; free virtual = 22637
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:01:00 . Memory (MB): peak = 1834.973 ; gain = 531.848 ; free physical = 10253 ; free virtual = 22620
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/nfs/home/t/t_anh/Lab2/Lab2.runs/synth_1/regfile.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file regfile_utilization_synth.rpt -pb regfile_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.10 . Memory (MB): peak = 1834.973 ; gain = 0.000 ; free physical = 10253 ; free virtual = 22621
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 16 18:39:15 2023...

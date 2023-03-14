@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar 13 19:32:55 2023
+# Process ID: 10532
+# Current directory: /nfs/home/t/t_anh/COEN316/Lab3/Code
+# Command line: vivado
+# Log file: /nfs/home/t/t_anh/COEN316/Lab3/Code/vivado.log
+# Journal file: /nfs/home/t/t_anh/COEN316/Lab3/Code/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project lab3 /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3 -part xc7a100tcsg324-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/CMC/tools/xilinx/Vivado_2018.2/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 6267.602 ; gain = 25.727 ; free physical = 11412 ; free virtual = 23231
+set_property target_language VHDL [current_project]
+set_property simulator_language VHDL [current_project]
+add_files -norecurse /nfs/home/t/t_anh/COEN316/Lab3/Code/next_address_board.vhd
+add_files -fileset constrs_1 -norecurse /nfs/home/t/t_anh/COEN316/Lab3/nexys-A7100T_master.xdc
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 2
+[Mon Mar 13 19:35:48 2023] Launched synth_1...
+Run output will be captured here: /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3/lab3.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Mon Mar 13 19:38:11 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3/lab3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Mar 13 19:40:34 2023] Launched impl_1...
+Run output will be captured here: /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3/lab3.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Mar 13 19:43:06 2023...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Mar 13 19:38:13 2023
+# Process ID: 11452
+# Current directory: /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3/lab3.runs/impl_1
+# Command line: vivado -log next_address.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source next_address.tcl -notrace
+# Log file: /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3/lab3.runs/impl_1/next_address.vdi
+# Journal file: /nfs/home/t/t_anh/COEN316/Lab3/Code/lab3/lab3.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source next_address.tcl -notrace

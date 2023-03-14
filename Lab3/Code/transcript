@@ -1,0 +1,34 @@
+# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1160.80.1.el7.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -do ../DO/next_address_board.do next_address 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.next_address(arch)#1
+# do ../DO/next_address_board.do 
+# ** Error: lock failed. Retrying 1 times, errno 11
+# ** Error: lock failed. Retrying 2 times, errno 11
+# ** Error: lock failed. Retrying 3 times, errno 11
+# ** Error: lock failed. Give up retry 3, errno 11
+# ** Error: Cannot lock WLF file: vsim.wlf
+#           errno 11: Resource temporarily unavailable.
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by:   Hostname:   ProcessID: 1
+#           Attempting to use alternate WLF file "./wlftrQ3oIQ".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrQ3oIQ
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 8 ns  Iteration: 0  Instance: /next_address
+# 
+#  
+# Break key hit 

@@ -1,0 +1,46 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/t/t_anh/COEN316/Lab3/Code
+T_opt
+Z1 VJBQ^<8QdL63G59gJXQ8N03
+Z2 04 12 4 work next_address arch 1
+Z3 =1-a08cfdf48d8c-640f9ec5-cf925-c5b
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/t/t_anh/COEN316/Lab3/Code
+Enext_address
+Z8 w1676996762
+Z9 DPx17 __model_tech/ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z10 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z11 DPx17 __model_tech/ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z12 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+R7
+Z13 8next_address.vhd
+Z14 Fnext_address.vhd
+l0
+L6
+Z15 VU7XBIk2:o5gLI<NcacPPn3
+Z16 OL;C;6.6g;45
+Z17 tExplicit 1
+Z18 !s100 YMBKRI<n[Be^fMTzOY]Lf1
+Aarch
+R9
+R10
+R11
+R12
+DEx40 /nfs/home/t/t_anh/COEN316/Lab3/Code/work 12 next_address 0 22 U7XBIk2:o5gLI<NcacPPn3
+32
+Mx4 17 __model_tech/ieee 14 std_logic_1164
+Mx3 17 __model_tech/ieee 18 std_logic_unsigned
+Mx2 17 __model_tech/ieee 15 std_logic_arith
+Mx1 17 __model_tech/ieee 11 numeric_std
+l27
+L22
+Z19 VeANnk=jD>=bC<@OkJd3QG3
+R16
+R17
+Z20 !s100 gPD;<ZbKQLSa8WVjXQl4<1

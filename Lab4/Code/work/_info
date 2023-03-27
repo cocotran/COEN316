@@ -1,0 +1,113 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/t/t_anh/COEN316/Lab4/Code
+T_opt
+Z1 VV@=n:i7PRLPkA8ULXGWMi3
+Z2 04 7 4 work i_cache arch 1
+Z3 =1-a08cfde439e4-6421f966-8aa89-220e
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/t/t_anh/COEN316/Lab4/Code
+T_opt1
+Z8 VIcVgOBWZ^B:NHXbo2L@eR2
+Z9 04 7 4 work d_cache arch 1
+Z10 =1-a08cfde439e4-6421fb3e-b157a-24b9
+R4
+Z11 n@_opt1
+R6
+R7
+T_opt2
+VmQnj>Q7oWImWlHICGT6FZ2
+04 13 4 work sign_extender arch 1
+Z12 =1-a08cfde439e4-6421fbff-27881-2607
+R4
+Z13 n@_opt2
+R6
+R7
+Ed_cache
+Z14 w1679947730
+Z15 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z16 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z17 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+R7
+Z18 8d_cache.vhd
+Z19 Fd_cache.vhd
+l0
+L5
+Z20 VD0Q^e42KC:Tk2C>1GTU9_1
+Z21 OL;C;6.6g;45
+32
+Z22 tExplicit 1
+Z23 !s100 0n3CH2;bRVik;E7UST`gU1
+Aarch
+R15
+R16
+R17
+Z24 DEx4 work 7 d_cache 0 22 D0Q^e42KC:Tk2C>1GTU9_1
+l20
+L15
+Z25 Vg47o`IZdaD4DEzmC=iD0H3
+R21
+32
+Z26 Mx3 4 ieee 14 std_logic_1164
+Z27 Mx2 4 ieee 18 std_logic_unsigned
+Z28 Mx1 4 ieee 15 std_logic_arith
+R22
+Z29 !s100 @_;[@EIAiOWj^79T_aD<42
+Ei_cache
+Z30 w1679948031
+R17
+R7
+Z31 8i_cache.vhd
+Z32 Fi_cache.vhd
+l0
+L4
+Z33 VN`HcI8On3cTVN2bZYd2W=2
+R21
+32
+R22
+Z34 !s100 ]S2MTC87H`zTnIO3j2e:c2
+Aarch
+R17
+Z35 DEx4 work 7 i_cache 0 22 N`HcI8On3cTVN2bZYd2W=2
+l13
+L11
+Z36 VYD8k5ZKV[?EH8hgmCbX5D3
+R21
+32
+Z37 Mx1 4 ieee 14 std_logic_1164
+R22
+Z38 !s100 ]k^Lo2^hZNo@S6SDR@>VN2
+Esign_extender
+Z39 w1679947717
+R15
+Z40 DPx4 ieee 16 std_logic_signed 0 22 <9<Kcl:S52:oW`F]FQhb20
+R17
+R7
+Z41 8sign_extender.vhd
+Z42 Fsign_extender.vhd
+l0
+L5
+Z43 VKhRdBzSk1]4Ok[jMJ0Vlb0
+R21
+32
+R22
+Z44 !s100 T<>Nd8TaPTa_C<?=QK4cY0
+Aarch
+R15
+R40
+R17
+Z45 DEx4 work 13 sign_extender 0 22 KhRdBzSk1]4Ok[jMJ0Vlb0
+l15
+L13
+Z46 Vda;8DMZekClO4E@GC>Dao2
+R21
+32
+R26
+Z47 Mx2 4 ieee 16 std_logic_signed
+R28
+R22
+Z48 !s100 cK@OT6kNgZGC[h?Q5V;zW1

@@ -1,0 +1,111 @@
+%!PS-Adobe-3.0
+%%Creator: Model Technology ModelSim SE-64 vsim 6.6g Simulator 2012.05 May 23 2012
+%%Title: /nfs/home/t/t_anh/COEN316/Lab4/wave.ps
+%%CreationDate: 2023-03-27 04:20:48 PM
+%%DocumentData: Clean8Bit
+%%DocumentNeededResources: font Helvetica
+%%Orientation: Landscape
+%%PageOrder: ascend
+%%Pages: 1
+%%EndComments
+%%BeginSetup
+%%BeginFeature: *PageSize 8.5x11.0
+<< /PageSize [612.0 792.0]
+/ImagingBBox null
+>> setpagedevice
+%%EndFeature
+%%EndSetup
+%%Page: 1 1
+gsave
+90 rotate 0.12 dup neg scale
+% dump string table
+/NP {newpath} def/SD {setdash} def/CL {setrgbcolor} def/GR {setgray} def
+/SX {exch LEdge sub XScale mul MaxLabelWidth add LMargin add LEdge LabelWidth sub add exch} def/CSX {exch dup LabelWidth gt {exch SX} {exch} ifelse} def
+/MT {SX moveto} def/LS {SX lineto stroke} def/LT {SX lineto} def/LFS {SX lineto fill stroke} def/RSS {rmoveto show stroke} def/ST {stroke} def/WT {CSX moveto dup stringwidth pop} def/TSW {pop 0 originOffset} def
+/TSE {MaxLabelWidth LabelWidth sub LMargin add 0 rmoveto neg originOffset} def/TS {-2 div originOffset CSX} def
+/MLW {stringwidth pop dup MaxLabelWidth gt {/MaxLabelWidth exch def}{pop} ifelse XS} def
+/XS {/XScale LabelWidth LMargin sub MaxLabelWidth LEdge LabelWidth sub add sub REdge LEdge sub div 1 add def} def
+/ARC {5 -2 roll SX 5 2 roll arc} def/LC {1 index stringwidth pop lt {pop ()} if} def
+/SW {stringwidth pop} def
+/ESTR {   dup 3 add string   /CurrentStr exch def   exch 0 2 index getinterval   0 1 3 index 1 sub {     dup     2 index exch get exch     CurrentStr exch 3 -1 roll put   } for   pop   dup 1 2 2 index add {     CurrentStr exch 46 put   } for   pop} def
+/LC {   exch  dup dup /CurrentStr exch def   SW 2 index gt {     CurrentStr length     dup     {       2 div cvi       3 index       CurrentStr SW       sub       dup 0 lt {         1 index         4 -1 roll         exch sub         3 1 roll       }       {         dup 5 index gt {           1 index 4 -1 roll add 3 1 roll         }         {           exit         } ifelse       } ifelse       3 index 2 index ESTR       1 index 0 eq {         exit       } if       pop     } loop     pop pop pop pop pop     CurrentStr   }   {     CurrentStr   } ifelse} def
+/XScale 1 def/MaxLabelWidth 0 def/LMargin 300 def/LEdge 1453 def/REdge 5699 def/LabelWidth 1416 def
+/Helvetica findfont [100 0 0 -100 0 0] makefont setfont
+/originOffset   currentfont   /FontBBox get 1 get   currentfont  /FontMatrix get 3 get   mul   currentfont   /FontType get   42 eq {     1000000 div   } {     neg   } ifelse def
+(/i_cache/address_in) MLW
+(/i_cache/instruction_out) MLW
+% draw waveform shading
+0 0 0 CL
+(00000) 1910 LC 1467 395 WT pop 0 originOffset 50 add RSS
+[] 0 SD
+3 setlinewidth
+0 setlinejoin
+0 setlinecap
+1453 340 MT 1453 340 LT 3384 340 LT 3391 395 LT ST
+1453 450 MT 1453 450 LT 3384 450 LT 3391 395 LT ST
+(00001) 1910 LC 3405 395 WT pop 0 originOffset 50 add RSS
+3391 395 MT 3391 395 LT 3398 340 LT 5322 340 LT 5329 395 LT ST
+3391 395 MT 3391 395 LT 3398 450 LT 5322 450 LT 5329 395 LT ST
+(00110) 941 LC 5343 395 WT pop 0 originOffset 50 add RSS
+5329 395 MT 5329 395 LT 5336 340 LT 6298 340 LT ST
+5329 395 MT 5329 395 LT 5336 450 LT 6298 450 LT ST
+(00100000000000110000000000000000) 1910 LC 1467 593 WT pop 0 originOffset 50 add RSS
+1453 538 MT 1453 538 LT 3384 538 LT 3391 593 LT ST
+1453 648 MT 1453 648 LT 3384 648 LT 3391 593 LT ST
+(00100000000000010000000000000000) 1910 LC 3405 593 WT pop 0 originOffset 50 add RSS
+3391 593 MT 3391 593 LT 3398 538 LT 5322 538 LT 5329 593 LT ST
+3391 593 MT 3391 593 LT 3398 648 LT 5322 648 LT 5329 593 LT ST
+(00001000000000000000000000000011) 941 LC 5343 593 WT pop 0 originOffset 50 add RSS
+5329 593 MT 5329 593 LT 5336 538 LT 6298 538 LT ST
+5329 593 MT 5329 593 LT 5336 648 LT 6298 648 LT ST
+% draw timeline
+(0 ns) 9999 LC 1453 4597 WT TS RSS
+2422 4428 MT 2422 4492 LS
+3391 4428 MT 3391 4492 LS
+(2 ns) 9999 LC 3391 4597 WT TS RSS
+4360 4428 MT 4360 4492 LS
+5329 4428 MT 5329 4492 LS
+(4 ns) 9999 LC 5329 4597 WT TS RSS
+6298 4428 MT 6298 4492 LS
+% draw grid
+2422 300 MT 2422 4428 LS
+3391 300 MT 3391 4428 LS
+4360 300 MT 4360 4428 LS
+5329 300 MT 5329 4428 LS
+6298 300 MT 6298 4428 LS
+% draw waveforms
+(/i_cache/address_in) 9999 LC 1416 449 WT TSE RSS
+2415 300 MT 2429 300 LS
+3384 300 MT 3398 300 LS
+4353 300 MT 4367 300 LS
+5322 300 MT 5336 300 LS
+6291 300 MT 6305 300 LS
+(00000) 1910 LC 1467 395 WT pop 0 originOffset 50 add RSS
+1453 340 MT 1453 340 LT 3384 340 LT 3391 395 LT ST
+1453 450 MT 1453 450 LT 3384 450 LT 3391 395 LT ST
+(00001) 1910 LC 3405 395 WT pop 0 originOffset 50 add RSS
+3391 395 MT 3391 395 LT 3398 340 LT 5322 340 LT 5329 395 LT ST
+3391 395 MT 3391 395 LT 3398 450 LT 5322 450 LT 5329 395 LT ST
+(00110) 941 LC 5343 395 WT pop 0 originOffset 50 add RSS
+5329 395 MT 5329 395 LT 5336 340 LT 6298 340 LT ST
+5329 395 MT 5329 395 LT 5336 450 LT 6298 450 LT ST
+(/i_cache/instruction_out) 9999 LC 1416 647 WT TSE RSS
+2415 498 MT 2429 498 LS
+3384 498 MT 3398 498 LS
+4353 498 MT 4367 498 LS
+5322 498 MT 5336 498 LS
+6291 498 MT 6305 498 LS
+(00100000000000110000000000000000) 1910 LC 1467 593 WT pop 0 originOffset 50 add RSS
+1453 538 MT 1453 538 LT 3384 538 LT 3391 593 LT ST
+1453 648 MT 1453 648 LT 3384 648 LT 3391 593 LT ST
+(00100000000000010000000000000000) 1910 LC 3405 593 WT pop 0 originOffset 50 add RSS
+3391 593 MT 3391 593 LT 3398 538 LT 5322 538 LT 5329 593 LT ST
+3391 593 MT 3391 593 LT 3398 648 LT 5322 648 LT 5329 593 LT ST
+(00001000000000000000000000000011) 941 LC 5343 593 WT pop 0 originOffset 50 add RSS
+5329 593 MT 5329 593 LT 5336 538 LT 6298 538 LT ST
+5329 593 MT 5329 593 LT 5336 648 LT 6298 648 LT ST
+% draw footer
+(Entity:i_cache  Architecture:arch  Date: Mon Mar 27 04:20:48 PM EDT 2023   Row: 1 Page: 1) 9999 LC 300 4799 WT TSW RSS
+grestore
+showpage
+%%EOF
